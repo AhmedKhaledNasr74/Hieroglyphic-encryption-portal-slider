@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(139% 98.13% at 50% 11%,black 59.41%,#fec019 108.27%,black 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+
+.allSliders{
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 18%;
+    left: 0;
+    display: flex;
+}
+
+.leftSlider{
+    clip-path: inset(0 0% 0 0);
+    height: inherit;
+    width: 50vw;
+}
+
+.rightSlider{
+    clip-path: inset(0 0 0 50%);
+    position: absolute;
+    left: 0;
+    top: 0;
+height: inherit;
+width: 100vw;
+}
+
+.photoSliderEncrypted{
+    position: absolute;
+    top: 0;
+    left: -280%;
+    display: flex;
+}
+
+.photoSlider{
+    position: absolute;
+    top: 0;
+    left: -280%;
+    display: flex;
+}
+
+.card img{
+    height: 12.5rem;
+    width: 20rem;
+}
+.card{
+    margin-right: 28rem;
+}
+.encryption{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    overflow: hidden;
+    height: 12.5rem;
+    width: 20rem;
+    margin-right: 28rem;
+}
+
+.portal{
+    position: absolute;
+    left: 50%;
+    top:0;
+    height: 66%;
+    width: 2px;
+    background-color: #fec019;
+    border-top-left-radius: 600%;
+    border-top-right-radius: 600%;
+    border-bottom-left-radius: 600%;
+    border-bottom-right-radius: 600%;
+    box-shadow: 0px 20px 50px 3px #fec019;
+    -webkit-box-shadow: 0px 20px 50px 3px #fec019;
+    -moz-box-shadow: 0px 20px 50px 3px #fec019;
+    mix-blend-mode: screen; 
+    transition: all ease 0.3s;
+}
+
+.portalParticles{
+    position:absolute ; 
+    clip-path: inset(0 0% 0 0);
+    top:0 ;
+    left:50% ;
+    width:50px ; 
+    height:66%; 
+    overflow: hidden;
+    display: inline-block
+}
